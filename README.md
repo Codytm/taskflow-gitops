@@ -14,9 +14,7 @@ The goal is a full path from a git push to a Kubernetes cluster: GitHub Actions 
 
 ## Run locally
 
-```bash
 docker compose up --build
-```
 
 - Web: http://localhost:5173
 - API: http://localhost:8000
