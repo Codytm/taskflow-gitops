@@ -1,0 +1,153 @@
+:root {
+  color-scheme: light dark;
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.5;
+  background: #f4f1ea;
+  color: #1d1a16;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background: #1b1916;
+    color: #f3efe6;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+.eyebrow {
+  margin: 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+h1 {
+  margin: 0.2rem 0;
+  font-size: 2.2rem;
+}
+
+.lede,
+.empty {
+  color: #5c564c;
+}
+
+@media (prefers-color-scheme: dark) {
+  .lede,
+  .empty,
+  small {
+    color: #c9c1b4;
+  }
+}
+
+.composer,
+.tasks li {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1rem;
+  border: 1px solid #d9d2c5;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+@media (prefers-color-scheme: dark) {
+  .composer,
+  .tasks li {
+    border-color: #3a342c;
+    background: rgba(255, 255, 255, 0.04);
+  }
+}
+
+.composer {
+  margin: 1.5rem 0;
+}
+
+label {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+input,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid #c9c0b2;
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+}
+
+button {
+  width: fit-content;
+  padding: 0.5rem 0.9rem;
+  border: 0;
+  border-radius: 999px;
+  background: #1d1a16;
+  color: #f4f1ea;
+  cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+  button {
+    background: #f3efe6;
+    color: #1d1a16;
+  }
+}
+
+.banner {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background: #f3d6d0;
+  color: #6d241c;
+}
+
+.tasks {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.tasks li {
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.tasks label {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.tasks input[type="checkbox"] {
+  width: auto;
+  margin-top: 0.35rem;
+}
+
+.tasks span {
+  display: grid;
+}
+
+.done strong {
+  text-decoration: line-through;
+}
+
+small {
+  color: #5c564c;
+}
